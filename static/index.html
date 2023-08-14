@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fast IMDb</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJP161THDV"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-WJP161THDV');
+</script>
+
+<body>
+<header>
+    <h1 id="header">FAST IMDb</h1>
+</header>
+
+<div class="container mt-5">
+
+    <h1>Who Is This?</h1>
+    <video autoplay width="400px"></video>
+    <canvas style="display: none"></canvas>
+    <div class="form-group">
+        <button id="capture" class="btn btn-primary mt-3" onclick="snapshot()">Capture</button>
+    </div>
+
+    <!-- INSERT FILE INPUT FIELD HERE -->
+    <div class="form-group">
+        <label for="imageFile">Or upload an image:</label>
+        <input type="file" class="form-control-file" id="imageFile" accept="image/*">
+    </div>
+
+    <div id="result">
+        <!-- The result will be displayed here -->
+    </div>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>

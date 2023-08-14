@@ -1,0 +1,216 @@
+/* Custom CSS */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+header {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    height: 80px;
+}
+
+#header {
+    font-weight: bold;
+    font-size: 220%;
+    color: black;
+    padding: 8px;
+    background-color: #f5c518;
+    width: fit-content;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 400%;
+    color: #f5c518;
+    font-family: fantasy ;
+    letter-spacing: 1px;
+}
+
+.container {
+    /*max-width: 600px;*/
+    max-width: 75%;
+    margin: 0 auto;
+    /*padding: 40px 20px;*/
+    padding: 40px 10%;
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(245, 197, 27);
+}
+
+form {
+    /*margin-bottom: 30px;*/
+    margin: 5%;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control-file {
+    color: #fff;
+    font-size: 175%;
+}
+
+#progressBarContainer {
+    display: none;
+}
+
+.btn-primary {
+    width: fit-content;
+    background-color: #f5c518;
+    border-color: black;
+    color: black;
+    /*margin-right: 20%;*/
+    font-size: 175%;
+}
+
+.btn-primary:hover {
+    background-color: #d4ad00;
+    border-color: black;
+    color: black;
+    box-shadow: 0 0 10px rgb(245, 197, 27);
+}
+
+
+#result {
+    margin-top: 30px;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/*.card {*/
+/*    background-color: #f5c518;*/
+/*    margin: 15px;*/
+/*}*/
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5c518;
+  border-radius: 10px;
+  /*padding: 25px;*/
+  padding: 25px 25px 0 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.uploaded-image-container,
+.celeb-image-container {
+    /*flex: 1 1 200px;*/
+    margin: 10px;
+    text-align: center;
+}
+
+.uploaded-image,
+.celeb-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.celeb-info-container {
+    flex: 1 1 400px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.celeb-info-box {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.celeb-info-box p {
+    margin: 0;
+    color: #fff;
+}
+
+ul {
+    list-style: None;
+    width: 100%;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+
+
+.progress {
+    z-index: 10000;
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    height: 10px;
+    background-color: #555;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #f5c518;
+    transition: width 2.5s ease-in-out;
+}
+
+/* Additional Styles */
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+/* New Responsive Styles for celebrity-info-container */
+@media (max-width: 768px) {
+    .images-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*.uploaded-image-container,*/
+    .celeb-image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .celeb-info-container {
+        align-items: center;
+    }
+}
+
+video {
+        display: flex;
+    justify-content: center; /* This centers the video horizontally */
+    align-items: center; /* This centers the video vertically */
+    margin-left: 30%;
+
+}
